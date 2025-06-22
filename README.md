@@ -30,14 +30,23 @@ The core of this project is a Vision Transformer (ViT) model trained to classify
 ## Project Structure
 
 project-path/
+
 ├── backend/
+
 │   ├── backend_service.py
+
 │   ├── requirements.txt
-│   └── model.h5  &lt;-- Your downloaded model goes here
+
+│   └── model.safetensors  &lt;-- Your downloaded model goes here
+
 └── lib/
+
 ├── const/
+
 │   └── ngrok.dart
+
 └── main.dart
+
 ... (other Flutter files)
 
 
