@@ -8,14 +8,10 @@ import base64
 from safetensors.torch import load_file
 from transformers import ViTForImageClassification, ViTConfig
 import os
-from pyngrok import ngrok  # <-- Replaced flask_ngrok with pyngrok
+from pyngrok import ngrok 
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for Flutter web if needed
-
-# --- We removed run_with_ngrok(app) from here ---
-
-# Global variables to store model
+CORS(app)  
 model = None
 class_names = ["Infectious", "Eczema", "Acne", "Pigment", "Benign", "Malignant"]
 
